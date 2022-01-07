@@ -11,90 +11,19 @@
           <ol class="list-timeline-v list-unstyled">
             <!--/.Timeline-list-->
             <!--/.timeline-item-->
-            <li data-aos="fade-left">
+            <li
+              v-for="item in this.timeline"
+              :key="item.id"
+              data-aos="fade-left"
+            >
               <div class="timeline-icon bg-tint-primary rounded-circle">
                 <!--ICON-->
-                <i class="bi bi-three-dots-vertical"></i>
+                <i :class="item.icon"></i>
               </div>
               <!--/.timeline-icon-->
               <div class="d-block flex-column">
-                <small class="text-muted">November 2017 - December 2018</small>
-                <h6 class="mt-2">Operations Analyst @ Comprehensive</h6>
-              </div>
-            </li>
-            <!--/.timeline-item-->
-            <li data-aos="fade-left">
-              <div class="timeline-icon bg-tint-primary rounded-circle">
-                <!--ICON-->
-                <i class="bi bi-bag"></i>
-              </div>
-              <!--/.timeline-icon-->
-              <div class="d-block flex-column">
-                <small class="text-muted">January 2019 - February 2020</small>
-                <h6 class="mt-2">Senior Operations Analyst @ Comprehensive</h6>
-              </div>
-            </li>
-            <!--/.timeline-item-->
-            <li data-aos="fade-left">
-              <div class="timeline-icon bg-tint-primary rounded-circle">
-                <!--ICON-->
-                <i class="bi bi-three-dots-vertical"></i>
-              </div>
-              <!--/.timeline-icon-->
-              <div class="d-block flex-column">
-                <small class="text-muted">September 2019 - Current</small>
-                <h6 class="mt-2">Start MBA @ Baruch Zicklin</h6>
-              </div>
-            </li>
-            <!--/.timeline-item-->
-            <li data-aos="fade-left">
-              <div class="timeline-icon bg-tint-primary rounded-circle">
-                <!--ICON-->
-                <i class="bi bi-vector-pen"></i>
-              </div>
-              <!--/.timeline-icon-->
-              <div class="d-block flex-column">
-                <small class="text-muted">March 2020 - May 2021</small>
-                <h6 class="mt-2">Product Manager @ Comprehensive</h6>
-              </div>
-            </li>
-            <!--/.timeline-item-->
-            <li data-aos="fade-left">
-              <div class="timeline-icon bg-tint-primary rounded-circle">
-                <!--ICON-->
-                <i class="bi bi-bezier"></i>
-              </div>
-              <!--/.timeline-icon-->
-              <div class="d-block flex-column">
-                <small class="text-muted">May 2021 - August 2021</small>
-                <h6 class="mt-2">Coding Bootcamp @ Actualize</h6>
-              </div>
-            </li>
-            <!--/.timeline-item-->
-            <li data-aos="fade-left">
-              <div class="timeline-icon bg-tint-primary rounded-circle">
-                <!--ICON-->
-                <i class="bi bi-bezier"></i>
-              </div>
-              <!--/.timeline-icon-->
-              <div class="d-block flex-column">
-                <small class="text-muted"
-                  >Septemeber 2021 - December 2021
-                </small>
-                <h6 class="mt-2">Working on Projects!</h6>
-              </div>
-            </li>
-
-            <!--/.timeline-item-->
-            <li data-aos="fade-left">
-              <div class="timeline-icon bg-tint-primary rounded-circle">
-                <!--ICON-->
-                <i class="bi bi-bezier"></i>
-              </div>
-              <!--/.timeline-icon-->
-              <div class="d-block flex-column">
-                <small class="text-muted">January 2022 - March 2022 </small>
-                <h6 class="mt-2">Business Development Consultant @ Drizip</h6>
+                <small class="text-muted">{{ item.dates }}</small>
+                <h6 class="mt-2">{{ item.description }}</h6>
               </div>
             </li>
           </ol>
@@ -112,6 +41,9 @@ export default {
       date: new Date(),
       lastMonth: new Date(),
     };
+  },
+  props: {
+    timeline: [],
   },
   mounted() {
     this.lastMonthMethod();
