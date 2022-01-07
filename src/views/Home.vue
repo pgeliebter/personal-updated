@@ -623,7 +623,6 @@
 <script>
 import LocomotiveScroll from 'locomotive-scroll';
 import Navbar from '../components/Navbar.vue';
-import Timeline from '../components/Timeline';
 
 export default {
   components: {
