@@ -628,7 +628,6 @@ import Timeline from '../components/Timeline';
 export default {
   components: {
     Navbar: Navbar,
-    Timeline: Timeline,
   },
   data() {
     return {
