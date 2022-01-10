@@ -100,95 +100,39 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-6 mb-5" data-scroll>
-                <!--Card-->
+              <!--Card-->
+
+              <div
+                class="col-sm-6 mb-5"
+                v-for="project in this.projects"
+                :key="project.id"
+                data-scroll
+              >
                 <a
-                  href="#!"
+                  :href="`#/project/${project.id}`"
                   class="d-block overflow-hidden position-relative card-hover"
                 >
                   <div class="overflow-hidden card-reveal-effect">
                     <img
-                      src="/assets/img/projects/lg1.jpg"
-                      alt=""
+                      :src="
+                        project.images.find(
+                          (image) => image.type === 'homepage_thumbnail'
+                        ).url
+                      "
+                      :alt="project.title"
                       class="img-fluid img-zoom"
                     />
                   </div>
                   <div class="card-body pt-4 pb-0">
                     <ul class="list-unstyled mb-0">
                       <li>
-                        <h5 class="fs-4 mb-1">Awesome title</h5>
+                        <h5 class="fs-4 mb-1">{{ project.title }}</h5>
                       </li>
-                      <li><span class="text-muted">Awesome Subtitle</span></li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6 mb-5" data-scroll>
-                <!--Card-->
-                <!--Card-->
-                <a
-                  href="#!"
-                  class="d-block overflow-hidden position-relative card-hover"
-                >
-                  <div class="overflow-hidden card-reveal-effect">
-                    <img
-                      src="/assets/img/projects/lg2.jpg"
-                      alt=""
-                      class="img-fluid img-zoom"
-                    />
-                  </div>
-                  <div class="card-body pt-4 pb-0">
-                    <ul class="list-unstyled mb-0">
                       <li>
-                        <h5 class="fs-4 mb-1">Awesome title</h5>
+                        <span class="text-muted">{{
+                          project.description
+                        }}</span>
                       </li>
-                      <li><span class="text-muted">Awesome Subtitle</span></li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6 mb-5 mb-sm-0" data-scroll>
-                <!--Card-->
-                <a
-                  href="#!"
-                  class="d-block overflow-hidden position-relative card-hover"
-                >
-                  <div class="overflow-hidden card-reveal-effect">
-                    <img
-                      src="/assets/img/projects/lg3.jpg"
-                      alt=""
-                      class="img-fluid img-zoom"
-                    />
-                  </div>
-                  <div class="card-body pt-4 pb-0">
-                    <ul class="list-unstyled mb-0">
-                      <li>
-                        <h5 class="fs-4 mb-1">Awesome title</h5>
-                      </li>
-                      <li><span class="text-muted">Awesome Subtitle</span></li>
-                    </ul>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6" data-scroll>
-                <!--Card-->
-                <a
-                  href="#!"
-                  class="d-block overflow-hidden position-relative card-hover"
-                >
-                  <div class="overflow-hidden card-reveal-effect">
-                    <img
-                      src="/assets/img/projects/lg4.jpg"
-                      alt=""
-                      class="img-fluid img-zoom"
-                    />
-                  </div>
-                  <div class="card-body pt-4 pb-0">
-                    <ul class="list-unstyled mb-0">
-                      <li>
-                        <h5 class="fs-4 mb-1">Awesome title</h5>
-                      </li>
-                      <li><span class="text-muted">Awesome Subtitle</span></li>
                     </ul>
                   </div>
                 </a>
@@ -234,7 +178,7 @@
                           />
                         </svg>
                       </span>
-                      Awwwards, Site of the Day
+                      Github commits this week:
                     </div>
                     <p class="mb-0 h2">5</p>
                   </li>
@@ -255,7 +199,7 @@
                           />
                         </svg>
                       </span>
-                      CSSDA, Site of the Day
+                      Total dive count:
                     </div>
                     <p class="mb-0 h2">7</p>
                   </li>
@@ -443,6 +387,7 @@ export default {
   data() {
     return {
       scrollIns: null,
+      projects: this.$store.state.projects,
     };
   },
   mounted() {
