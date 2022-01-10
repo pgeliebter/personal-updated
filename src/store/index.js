@@ -48,6 +48,56 @@ export default createStore({
           id: 7,
         },
       ],
+      projects: [
+        {
+          title: 'Refer Everyone',
+          description: `An app that allows marketers to create and manage viral referral campaigns.`,
+          technologies: ['Ruby on Rails', 'Vue 2', 'PostgreSQL', 'Bootstrap 5'],
+          liveLink: 'https://refer-everyone.netlify.app/',
+          otherLink: [
+            {
+              name: 'Repo - Frontend',
+              url: '',
+            },
+            {
+              name: 'Repo - Backend',
+              url: '',
+            },
+            {
+              name: 'Wireframes - Lucidchart',
+              url: '',
+            },
+            {
+              name: 'Agile board - Trello',
+              url: '',
+            },
+          ],
+        },
+        {
+          title: 'Crypto Dreams',
+          description: `Track abritrage opotunites across many different crypto exchanges and trading pairs! Also include spot price.`,
+          technologies: ['Ruby on Rails', 'Nuxt.js', 'Bootstrap 5'],
+          links: [
+            { name: 'Live App', url: 'https://crypto-dreams.netlify.app/' },
+            {
+              name: 'Frontend Repo',
+              url: 'https://github.com/pgeliebter/crypto-dreams',
+            },
+            {
+              name: 'Backend Repo',
+              url: 'https://github.com/pgeliebter/crypto-dreams-backend',
+            },
+            {
+              name: 'Wireframes',
+              link: '',
+            },
+            {
+              name: 'Agile board',
+              link: '',
+            },
+          ],
+        },
+      ],
       date: new Date(),
     };
   },
