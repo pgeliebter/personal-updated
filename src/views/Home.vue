@@ -82,186 +82,6 @@
           </div>
         </section>
 
-        <section class="position-relative overflow-hidden" data-scroll-section>
-          <div
-            class="size-280 position-absolute end-0 bottom-0 me-3 mb-n4 bg-danger d-none d-md-block rounded-circle"
-            data-scroll
-            data-scroll-direction="vertical"
-            data-scroll-speed="6"
-          ></div>
-          <div
-            class="size-280 position-absolute start-0 top-0 me-3 mt-n4 bg-info d-none d-md-block rounded-circle opacity-80"
-            data-scroll
-            data-scroll-direction="vertical"
-            data-scroll-speed="6"
-          ></div>
-          <div class="container py-12 position-relative">
-            <div
-              class="row mb-7 mb-lg-12 align-items-center justify-content-center"
-            >
-              <div class="col-xl-10 text-center mb-5 mb-md-0">
-                <h2
-                  class="mb-0 display-4 fw-normal"
-                  data-scroll
-                  data-scroll-direction="vertical"
-                  data-scroll-speed="3"
-                >
-                  I’m Aaron Nunez, 24, 100% UI UX web designer, I live web
-                  design and Development with no less passion.
-                </h2>
-              </div>
-            </div>
-
-            <div class="row justify-content-center">
-              <!--Feature column-->
-              <div class="col-12 col-md-4 mb-5 mb-md-0">
-                <div
-                  class="center-both size-60 rounded-circle border border-secondary text-muted lh-1 fw-semiold small mb-4"
-                >
-                  01
-                </div>
-                <h5 class="mb-3">Planing</h5>
-
-                <p class="mb-0 w-lg-80">
-                  Lorem ipsum is placeholder text commonly used in the graphic,
-                  print, and publishing industries for previewing layouts and
-                  visual mockups.
-                </p>
-              </div>
-
-              <!--Feature column-->
-              <div class="col-12 col-md-4 mb-5 mb-md-0">
-                <div
-                  class="center-both size-60 rounded-circle border border-secondary text-muted lh-1 fw-semiold small mb-4"
-                >
-                  02
-                </div>
-                <h5 class="mb-3">Design & Development</h5>
-                <p class="mb-0 w-lg-80">
-                  Lorem ipsum is placeholder text commonly used in the graphic,
-                  print, and publishing industries for previewing layouts and
-                  visual mockups.
-                </p>
-              </div>
-
-              <!--Feature column-->
-              <div class="col-12 col-md-4">
-                <div
-                  class="center-both size-60 rounded-circle border border-secondary text-muted lh-1 fw-semiold small mb-4"
-                >
-                  03
-                </div>
-                <h5 class="mb-3">Testing & Launch</h5>
-                <p class="mb-0 w-lg-80">
-                  Lorem ipsum is placeholder text commonly used in the graphic,
-                  print, and publishing industries for previewing layouts and
-                  visual mockups.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="position-relative overflow-hidden" data-scroll-section>
-          <!--Blur background-->
-          <svg
-            class="position-absolute start-0 top-0 text-info flip-x opacity-50"
-            width="729"
-            height="729"
-            viewBox="0 0 729 729"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g filter="url(#filter0_alt)">
-              <path
-                d="M182 182C182 229.932 191.441 277.396 209.784 321.679C228.127 365.963 255.013 406.201 288.906 440.094C322.799 473.987 363.037 500.873 407.321 519.216C451.604 537.559 499.068 547 547 547L547 182H182Z"
-                fill="currentColor"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_alt"
-                x="0"
-                y="0"
-                width="729"
-                height="729"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="91"
-                  result="effect1_foregroundBlur"
-                />
-              </filter>
-            </defs>
-          </svg>
-          <div class="container py-7 py-lg-12 position-relative z-index-1">
-            <div class="row align-items-stretch">
-              <div class="col-md-10 col-xl-5 ms-auto order-last">
-                <h3
-                  class="mb-5 display-6 fw-normal position-relative z-index-1"
-                  data-scroll
-                  data-scroll-direction="vertical"
-                  data-scroll-speed="1"
-                >
-                  My current journey started at Comprehensive where I worked as
-                  an Ops Analyst for 3 years. I’ve had the privalge to work on
-                  many different project there
-                </h3>
-              </div>
-              <div class="col-md-6 order-1 mb-5 mb-md-0 position-relative">
-                <div
-                  class="overflow-hidden position-relative"
-                  data-scroll
-                  data-scroll-direction="vertical"
-                  data-scroll-speed="3"
-                >
-                  <img
-                    src="assets/img/projects/lg4.jpg"
-                    alt
-                    class="img-fluid flip-x d-block"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container py-7 py-lg-12 position-relative z-index-1">
-            <div class="row align-items-stretch">
-              <div class="col-md-10 col-xl-5 ms-auto order-last">
-                <h3
-                  class="mb-5 display-6 fw-normal position-relative z-index-1"
-                  data-scroll
-                  data-scroll-direction="vertical"
-                  data-scroll-speed="1"
-                >
-                  My current journey started at Comprehensive where I worked as
-                  an Ops Analyst for 3 years. I’ve had the privalge to work on
-                  many different project there
-                </h3>
-              </div>
-              <div class="col-md-6 order-1 mb-5 mb-md-0 position-relative">
-                <div
-                  class="overflow-hidden position-relative"
-                  data-scroll
-                  data-scroll-direction="vertical"
-                  data-scroll-speed="3"
-                >
-                  <img
-                    src="assets/img/projects/lg4.jpg"
-                    alt
-                    class="img-fluid flip-x d-block"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section class="position-relative" id="projects" data-scroll-section>
           <div
             class="size-280 position-absolute end-0 bottom-0 me-3 mt-n4 bg-primary d-none d-md-block rounded-circle"
@@ -288,8 +108,8 @@
                 >
                   <div class="overflow-hidden card-reveal-effect">
                     <img
-                      src="assets/img/projects/lg1.jpg"
-                      alt
+                      src="/assets/img/projects/lg1.jpg"
+                      alt=""
                       class="img-fluid img-zoom"
                     />
                   </div>
@@ -298,9 +118,7 @@
                       <li>
                         <h5 class="fs-4 mb-1">Awesome title</h5>
                       </li>
-                      <li>
-                        <span class="text-muted">Awesome Subtitle</span>
-                      </li>
+                      <li><span class="text-muted">Awesome Subtitle</span></li>
                     </ul>
                   </div>
                 </a>
@@ -314,8 +132,8 @@
                 >
                   <div class="overflow-hidden card-reveal-effect">
                     <img
-                      src="assets/img/projects/lg2.jpg"
-                      alt
+                      src="/assets/img/projects/lg2.jpg"
+                      alt=""
                       class="img-fluid img-zoom"
                     />
                   </div>
@@ -324,9 +142,7 @@
                       <li>
                         <h5 class="fs-4 mb-1">Awesome title</h5>
                       </li>
-                      <li>
-                        <span class="text-muted">Awesome Subtitle</span>
-                      </li>
+                      <li><span class="text-muted">Awesome Subtitle</span></li>
                     </ul>
                   </div>
                 </a>
@@ -339,8 +155,8 @@
                 >
                   <div class="overflow-hidden card-reveal-effect">
                     <img
-                      src="assets/img/projects/lg3.jpg"
-                      alt
+                      src="/assets/img/projects/lg3.jpg"
+                      alt=""
                       class="img-fluid img-zoom"
                     />
                   </div>
@@ -349,9 +165,7 @@
                       <li>
                         <h5 class="fs-4 mb-1">Awesome title</h5>
                       </li>
-                      <li>
-                        <span class="text-muted">Awesome Subtitle</span>
-                      </li>
+                      <li><span class="text-muted">Awesome Subtitle</span></li>
                     </ul>
                   </div>
                 </a>
@@ -364,8 +178,8 @@
                 >
                   <div class="overflow-hidden card-reveal-effect">
                     <img
-                      src="assets/img/projects/lg4.jpg"
-                      alt
+                      src="/assets/img/projects/lg4.jpg"
+                      alt=""
                       class="img-fluid img-zoom"
                     />
                   </div>
@@ -374,9 +188,7 @@
                       <li>
                         <h5 class="fs-4 mb-1">Awesome title</h5>
                       </li>
-                      <li>
-                        <span class="text-muted">Awesome Subtitle</span>
-                      </li>
+                      <li><span class="text-muted">Awesome Subtitle</span></li>
                     </ul>
                   </div>
                 </a>
