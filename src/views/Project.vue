@@ -5,7 +5,7 @@
       <div class="spinner-border text-primary" role="status"></div>
       <span class="small d-block ms-2">Loading...</span>
     </div>
-
+    <Navbar></Navbar>
     <!--Main content-->
     <main>
       <section class="position-relative">
@@ -205,14 +205,22 @@
   </body>
 </template>
 <script>
+import Navbar from '../components/Navbar.vue';
 export default {
+  components: {
+    Navbar: Navbar,
+  },
   data: function () {
     return {
-      project: this.$store.state.projects[1],
+      project: {},
+
+      id: parseInt(this.$route.params.id),
     };
   },
   mounted() {
-    console.log(this.project);
+    this.project = this.$store.state.projects.find(
+      (project) => project.id === this.id
+    );
   },
 };
 </script>
