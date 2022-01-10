@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark py-3">
       <div class="container position-relative">
         <a class="navbar-brand width-30" href="index.html">
-          <img src="assets/img/logo/logo-a.svg" class="img-fluid" />
+          <img src="/assets/img/logo/logo-a.svg" class="img-fluid" />
         </a>
 
         <div
@@ -47,6 +47,29 @@
     aria-labelledby="offcanvasEnd"
   >
     <div class="border-bottom offcanvas-header">
+      <ul class="list-inline">
+        <li class="list-inline-item me-3">
+          <a href="#" class="fs-5 text-muted">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item me-3">
+          <a href="#" class="fs-5 text-muted">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item me-3">
+          <a href="#" class="fs-5 text-muted">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="fs-5 text-muted">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+
       <button
         type="button"
         class="btn-close text-reset p-0 m-0 size-40 center-both ms-auto"
