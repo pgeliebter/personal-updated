@@ -1,0 +1,520 @@
+<template>
+  <body class="bg-light">
+    <!--Preloader Spinner-->
+    <div class="spinner-loader bg-gradient-secondary text-white">
+      <div class="spinner-border text-primary" role="status"></div>
+      <span class="small d-block ms-2">Loading...</span>
+    </div>
+
+    <div>
+      <!--Header Start-->
+
+      <Navbar></Navbar>
+      <!--Main content-->
+      <main>
+        <!--page-hero-->
+        <section class="position-relative overflow-hidden">
+          <div
+            class="size-280 position-absolute end-0 bottom-0 me-3 mt-n4 bg-primary d-none d-md-block rounded-circle"
+            data-scroll
+            data-scroll-direction="vertical"
+            data-scroll-speed="6"
+          ></div>
+          <!--Blur background-->
+          <svg
+            class="position-absolute end-0 top-0 text-primary opacity-25"
+            width="729"
+            height="729"
+            viewBox="0 0 729 729"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_Hero)">
+              <path
+                d="M182 182C182 229.932 191.441 277.396 209.784 321.679C228.127 365.963 255.013 406.201 288.906 440.094C322.799 473.987 363.037 500.873 407.321 519.216C451.604 537.559 499.068 547 547 547L547 182H182Z"
+                fill="currentColor"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_Hero"
+                x="0"
+                y="0"
+                width="729"
+                height="729"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="91"
+                  result="effect1_foregroundBlur"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          <div class="container position-relative z-index-1">
+            <div class="row vh-100 align-items-center">
+              <div class="col-xl-10">
+                <div class="d-inline-flex">
+                  <ul class="js-hover-img">
+                    <li class="js-hover-img-item">
+                      <h1 class="js-hover-img-link display-3 mb-0">
+                        <small class="fs-4 ls-1 fw-normal"
+                          >👋 Hi, I Am Pinny Geliebter</small
+                        >
+                        <br />A Software And <br />Business Developer
+                      </h1>
+                      <img
+                        src="/assets/img/team/3.jpg"
+                        alt="Image"
+                        class="img height-300 w-auto"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="scrollBtn">
+                  <a href="#" class="small">Scroll Down</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="position-relative" id="projects">
+          ]
+          <div class="py-7 py-lg-12 container position-relative z-index-1">
+            <div class="row mb-7">
+              <div class="col-lg-6">
+                <h1 class="display-3">Featured work</h1>
+                <p class="lead">
+                  We’re a digital design studio connecting brands to people
+                  through craft and culture.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 mb-5">
+                <!--Card-->
+                <a
+                  href="#!"
+                  class="d-block overflow-hidden position-relative card-hover"
+                >
+                  <div class="overflow-hidden card-reveal-effect">
+                    <img
+                      src="/assets/img/projects/lg1.jpg"
+                      alt=""
+                      class="img-fluid img-zoom"
+                    />
+                  </div>
+                  <div class="card-body pt-4 pb-0">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <h5 class="fs-4 mb-1">Awesome title</h5>
+                      </li>
+                      <li><span class="text-muted">Awesome Subtitle</span></li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6 mb-5">
+                <!--Card-->
+                <a
+                  href="#!"
+                  class="d-block overflow-hidden position-relative card-hover"
+                >
+                  <div class="overflow-hidden card-reveal-effect">
+                    <img
+                      src="/assets/img/projects/lg2.jpg"
+                      alt=""
+                      class="img-fluid img-zoom"
+                    />
+                  </div>
+                  <div class="card-body pt-4 pb-0">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <h5 class="fs-4 mb-1">Awesome title</h5>
+                      </li>
+                      <li><span class="text-muted">Awesome Subtitle</span></li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6 mb-5 mb-sm-0">
+                <!--Card-->
+                <a
+                  href="#!"
+                  class="d-block overflow-hidden position-relative card-hover"
+                >
+                  <div class="overflow-hidden card-reveal-effect">
+                    <img
+                      src="/assets/img/projects/lg3.jpg"
+                      alt=""
+                      class="img-fluid img-zoom"
+                    />
+                  </div>
+                  <div class="card-body pt-4 pb-0">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <h5 class="fs-4 mb-1">Awesome title</h5>
+                      </li>
+                      <li><span class="text-muted">Awesome Subtitle</span></li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <!--Card-->
+                <a
+                  href="#!"
+                  class="d-block overflow-hidden position-relative card-hover"
+                >
+                  <div class="overflow-hidden card-reveal-effect">
+                    <img
+                      src="/assets/img/projects/lg4.jpg"
+                      alt=""
+                      class="img-fluid img-zoom"
+                    />
+                  </div>
+                  <div class="card-body pt-4 pb-0">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <h5 class="fs-4 mb-1">Awesome title</h5>
+                      </li>
+                      <li><span class="text-muted">Awesome Subtitle</span></li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="position-relative overflow-hidden">
+          <div class="container py-7 py-lg-12 position-relative z-index-1">
+            <div class="row justify-content-around">
+              <div class="col-md-5 col-xl-4 mb-5 mb-md-0">
+                <h4 class="display-3 mb-0">My Awards</h4>
+              </div>
+              <div class="col-md-7">
+                <ul class="list-unstyled">
+                  <li
+                    class="d-flex align-items-center justify-content-between py-3 border-bottom"
+                  >
+                    <div class="d-flex align-items-center fw-semibold fs-6">
+                      <span class="d-block me-3">
+                        <svg
+                          class="text-muted"
+                          fill="currentColor"
+                          width="42"
+                          height="42"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="m183 392l-10 2 10 53c-13-4-25-10-37-17l2-49-10 0-1 44c-10-6-20-14-28-22l14-46-9-3-13 42c-8-7-15-15-21-25l21-43-8-5-18 40c-7-11-14-24-20-37l31-29-7-7-29 26c-3-9-6-19-9-29l35-25-5-7-31 22c-2-10-3-21-3-31l38-15-4-9-34 14c0-12 1-25 4-38l34-2 0-10-30 1c3-11 7-22 13-34l29 6 2-10-28-5c5-12 12-21 19-31l24 15 6-8-24-17c6-7 11-14 17-20l25 17 6-8-23-16c7-5 14-11 21-15l20 11 4-8-14-9c9-5 18-10 28-14l-4-10c-8 4-15 7-22 13l5-13-10-3-9 26c-6 3-10 7-14 11l5-18-10-3-10 34c-5 4-9 9-15 15l0-21-10 0 0 32c-7 9-12 17-17 27l-1-24-10 2 3 39c-4 10-9 20-11 29l-9-24-10 3 14 37c-2 11-4 24-5 35l-17-23-8 6 23 34c0 10 0 19 2 29l-23-17-5 9 31 24c1 10 4 19 8 29l-35-10-3 10 42 13c6 12 12 24 19 35l-38-7-2 10 48 8c6 9 13 17 20 24l-41 3 1 10 48-4c10 8 20 16 30 23l-38 16 2 8 45-17c13 7 24 13 38 17l-35 19 4 8 43-23 4 2z m326-76l-3-9-35 9c3-9 6-19 8-29l31-24-5-8-23 16c2-9 2-19 3-29l24-34-9-5-16 22c0-13-3-24-6-35l14-37-10-2-8 24c-3-10-7-20-12-30l3-39-10-2-1 24c-6-10-11-18-17-27l0-32-10 0 0 21c-4-5-9-10-14-15l-11-34-10 3 6 18c-4-4-10-7-14-11l-10-25-8 2 4 13c-7-4-16-8-24-13l-4 10c10 4 19 9 28 14l-16 9 6 8 20-11c7 4 14 10 21 15l-23 16 6 8 25-18c6 6 13 13 17 20l-24 17 6 8 24-15c7 9 14 19 19 30l-28 6 2 10 29-6c4 11 8 23 11 34l-29-1 0 9 34 3c2 13 4 25 4 38l-34-14-4 9 38 15c0 10-2 21-3 31l-32-23-6 9 35 25c-1 10-4 20-8 30l-30-27-7 7 32 29c-5 13-11 26-19 37l-18-39-9 4 21 43c-7 9-14 17-21 26l-13-42-9 2 14 47c-9 8-19 15-28 21l-2-44-10 0 2 49c-11 7-24 13-37 17l10-52-10-1-12 69 4-2 42 23 4-9-35-18c13-4 25-10 38-17l45 17 3-8-38-14c11-7 21-16 31-24l49 4 1-10-40-3c7-7 14-15 19-24l48-8-1-10-38 7c7-11 12-22 18-35z"
+                          />
+                        </svg>
+                      </span>
+                      Awwwards, Site of the Day
+                    </div>
+                    <p class="mb-0 h2">5</p>
+                  </li>
+                  <li
+                    class="d-flex align-items-center justify-content-between py-3 border-bottom"
+                  >
+                    <div class="d-flex align-items-center fw-semibold fs-6">
+                      <span class="d-block me-3">
+                        <svg
+                          class="text-muted"
+                          fill="currentColor"
+                          width="42"
+                          height="42"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="m183 392l-10 2 10 53c-13-4-25-10-37-17l2-49-10 0-1 44c-10-6-20-14-28-22l14-46-9-3-13 42c-8-7-15-15-21-25l21-43-8-5-18 40c-7-11-14-24-20-37l31-29-7-7-29 26c-3-9-6-19-9-29l35-25-5-7-31 22c-2-10-3-21-3-31l38-15-4-9-34 14c0-12 1-25 4-38l34-2 0-10-30 1c3-11 7-22 13-34l29 6 2-10-28-5c5-12 12-21 19-31l24 15 6-8-24-17c6-7 11-14 17-20l25 17 6-8-23-16c7-5 14-11 21-15l20 11 4-8-14-9c9-5 18-10 28-14l-4-10c-8 4-15 7-22 13l5-13-10-3-9 26c-6 3-10 7-14 11l5-18-10-3-10 34c-5 4-9 9-15 15l0-21-10 0 0 32c-7 9-12 17-17 27l-1-24-10 2 3 39c-4 10-9 20-11 29l-9-24-10 3 14 37c-2 11-4 24-5 35l-17-23-8 6 23 34c0 10 0 19 2 29l-23-17-5 9 31 24c1 10 4 19 8 29l-35-10-3 10 42 13c6 12 12 24 19 35l-38-7-2 10 48 8c6 9 13 17 20 24l-41 3 1 10 48-4c10 8 20 16 30 23l-38 16 2 8 45-17c13 7 24 13 38 17l-35 19 4 8 43-23 4 2z m326-76l-3-9-35 9c3-9 6-19 8-29l31-24-5-8-23 16c2-9 2-19 3-29l24-34-9-5-16 22c0-13-3-24-6-35l14-37-10-2-8 24c-3-10-7-20-12-30l3-39-10-2-1 24c-6-10-11-18-17-27l0-32-10 0 0 21c-4-5-9-10-14-15l-11-34-10 3 6 18c-4-4-10-7-14-11l-10-25-8 2 4 13c-7-4-16-8-24-13l-4 10c10 4 19 9 28 14l-16 9 6 8 20-11c7 4 14 10 21 15l-23 16 6 8 25-18c6 6 13 13 17 20l-24 17 6 8 24-15c7 9 14 19 19 30l-28 6 2 10 29-6c4 11 8 23 11 34l-29-1 0 9 34 3c2 13 4 25 4 38l-34-14-4 9 38 15c0 10-2 21-3 31l-32-23-6 9 35 25c-1 10-4 20-8 30l-30-27-7 7 32 29c-5 13-11 26-19 37l-18-39-9 4 21 43c-7 9-14 17-21 26l-13-42-9 2 14 47c-9 8-19 15-28 21l-2-44-10 0 2 49c-11 7-24 13-37 17l10-52-10-1-12 69 4-2 42 23 4-9-35-18c13-4 25-10 38-17l45 17 3-8-38-14c11-7 21-16 31-24l49 4 1-10-40-3c7-7 14-15 19-24l48-8-1-10-38 7c7-11 12-22 18-35z"
+                          />
+                        </svg>
+                      </span>
+                      CSSDA, Site of the Day
+                    </div>
+                    <p class="mb-0 h2">7</p>
+                  </li>
+                  <li
+                    class="d-flex align-items-center justify-content-between py-3 border-bottom"
+                  >
+                    <div class="d-flex align-items-center fw-semibold fs-6">
+                      <span class="d-block me-3">
+                        <svg
+                          class="text-muted"
+                          fill="currentColor"
+                          width="42"
+                          height="42"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="m183 392l-10 2 10 53c-13-4-25-10-37-17l2-49-10 0-1 44c-10-6-20-14-28-22l14-46-9-3-13 42c-8-7-15-15-21-25l21-43-8-5-18 40c-7-11-14-24-20-37l31-29-7-7-29 26c-3-9-6-19-9-29l35-25-5-7-31 22c-2-10-3-21-3-31l38-15-4-9-34 14c0-12 1-25 4-38l34-2 0-10-30 1c3-11 7-22 13-34l29 6 2-10-28-5c5-12 12-21 19-31l24 15 6-8-24-17c6-7 11-14 17-20l25 17 6-8-23-16c7-5 14-11 21-15l20 11 4-8-14-9c9-5 18-10 28-14l-4-10c-8 4-15 7-22 13l5-13-10-3-9 26c-6 3-10 7-14 11l5-18-10-3-10 34c-5 4-9 9-15 15l0-21-10 0 0 32c-7 9-12 17-17 27l-1-24-10 2 3 39c-4 10-9 20-11 29l-9-24-10 3 14 37c-2 11-4 24-5 35l-17-23-8 6 23 34c0 10 0 19 2 29l-23-17-5 9 31 24c1 10 4 19 8 29l-35-10-3 10 42 13c6 12 12 24 19 35l-38-7-2 10 48 8c6 9 13 17 20 24l-41 3 1 10 48-4c10 8 20 16 30 23l-38 16 2 8 45-17c13 7 24 13 38 17l-35 19 4 8 43-23 4 2z m326-76l-3-9-35 9c3-9 6-19 8-29l31-24-5-8-23 16c2-9 2-19 3-29l24-34-9-5-16 22c0-13-3-24-6-35l14-37-10-2-8 24c-3-10-7-20-12-30l3-39-10-2-1 24c-6-10-11-18-17-27l0-32-10 0 0 21c-4-5-9-10-14-15l-11-34-10 3 6 18c-4-4-10-7-14-11l-10-25-8 2 4 13c-7-4-16-8-24-13l-4 10c10 4 19 9 28 14l-16 9 6 8 20-11c7 4 14 10 21 15l-23 16 6 8 25-18c6 6 13 13 17 20l-24 17 6 8 24-15c7 9 14 19 19 30l-28 6 2 10 29-6c4 11 8 23 11 34l-29-1 0 9 34 3c2 13 4 25 4 38l-34-14-4 9 38 15c0 10-2 21-3 31l-32-23-6 9 35 25c-1 10-4 20-8 30l-30-27-7 7 32 29c-5 13-11 26-19 37l-18-39-9 4 21 43c-7 9-14 17-21 26l-13-42-9 2 14 47c-9 8-19 15-28 21l-2-44-10 0 2 49c-11 7-24 13-37 17l10-52-10-1-12 69 4-2 42 23 4-9-35-18c13-4 25-10 38-17l45 17 3-8-38-14c11-7 21-16 31-24l49 4 1-10-40-3c7-7 14-15 19-24l48-8-1-10-38 7c7-11 12-22 18-35z"
+                          />
+                        </svg>
+                      </span>
+                      FWA, Site of The Day
+                    </div>
+                    <p class="mb-0 h2">1</p>
+                  </li>
+                  <li
+                    class="d-flex align-items-center justify-content-between py-3 border-bottom"
+                  >
+                    <div class="d-flex align-items-center fw-semibold fs-6">
+                      <span class="d-block me-3">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          class="bi bi-journal-medical text-muted"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M8 4a.5.5 0 0 1 .5.5v.634l.549-.317a.5.5 0 1 1 .5.866L9 6l.549.317a.5.5 0 1 1-.5.866L8.5 6.866V7.5a.5.5 0 0 1-1 0v-.634l-.549.317a.5.5 0 1 1-.5-.866L7 6l-.549-.317a.5.5 0 0 1 .5-.866l.549.317V4.5A.5.5 0 0 1 8 4zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
+                          />
+                          <path
+                            d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+                          />
+                          <path
+                            d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+                          />
+                        </svg>
+                      </span>
+                      Published in 365 best websites in the world
+                    </div>
+                    <p class="mb-0 h2">2</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="position-relative">
+          <div
+            class="position-absolute w-75 h-100 start-0 top-0 bg-secondary rounded-block rounded-start-0"
+          ></div>
+          <div class="container position-relative py-7 py-lg-12">
+            <div class="row justify-content-center">
+              <div class="col-md-4 text-center mb-5 mb-md-0">
+                <!--Numbers card-->
+                <div
+                  class="position-relative ps-2 pb-2 rounded-xl overflow-hidden"
+                >
+                  <!--Numbers card bg-->
+                  <div
+                    class="position-absolute start-0 bottom-0 bg-primary rounded-xl w-75 w-md-90 h-75"
+                  ></div>
+                  <div
+                    class="position-relative bg-tint-primary p-4 py-lg-6 rounded-xl"
+                  >
+                    <h2
+                      class="display-3 fw-semibold"
+                      data-aos
+                      data-countup='{"startVal":0,"suffix":"+","duration":"5"}'
+                      data-to="48"
+                      data-aos-id="countup:in"
+                    >
+                      0
+                    </h2>
+                    <h6 class="mb-0">Total Awards</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center mb-5 mb-md-0">
+                <!--Numbers card-->
+                <div
+                  class="position-relative ps-2 pb-2 rounded-xl overflow-hidden"
+                >
+                  <!--Numbers card bg-->
+                  <div
+                    class="position-absolute start-0 bottom-0 bg-success rounded-xl w-75 w-md-90 h-75"
+                  ></div>
+                  <div
+                    class="position-relative bg-tint-success p-4 py-lg-6 rounded-xl"
+                  >
+                    <h2
+                      class="display-3 fw-semibold"
+                      data-aos
+                      data-countup='{"startVal":0,"suffix":"+","duration":"5"}'
+                      data-to="64"
+                      data-aos-id="countup:in"
+                    >
+                      0
+                    </h2>
+                    <h6 class="mb-0">Projects Done</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center">
+                <!--Numbers card-->
+                <div
+                  class="position-relative ps-2 pb-2 rounded-xl overflow-hidden"
+                >
+                  <!--Numbers card bg-->
+                  <div
+                    class="position-absolute start-0 bottom-0 bg-danger rounded-xl w-75 w-md-90 h-75"
+                  ></div>
+                  <div
+                    class="position-relative bg-tint-danger p-4 py-lg-6 rounded-xl"
+                  >
+                    <h2
+                      class="display-3 fw-semibold"
+                      data-aos
+                      data-countup='{"startVal":0,"suffix":"%","duration":"5"}'
+                      data-to="99"
+                      data-aos-id="countup:in"
+                    >
+                      0
+                    </h2>
+                    <h6 class="mb-0">Happy Customers</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>HI</div>
+        </section>
+      </main>
+
+      <!--Footer Start-->
+      <footer class="position-relative">
+        <!--Blur background-->
+        <svg
+          class="position-absolute end-0 top-0 text-info opacity-25"
+          width="729"
+          height="729"
+          viewBox="0 0 729 729"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_alt)">
+            <path
+              d="M182 182C182 229.932 191.441 277.396 209.784 321.679C228.127 365.963 255.013 406.201 288.906 440.094C322.799 473.987 363.037 500.873 407.321 519.216C451.604 537.559 499.068 547 547 547L547 182H182Z"
+              fill="currentColor"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_alt"
+              x="0"
+              y="0"
+              width="729"
+              height="729"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="91"
+                result="effect1_foregroundBlur"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <div class="container py-7 py-lg-12 position-relative">
+          <div class="row">
+            <div class="col-12 col-md-7 h-100 me-auto mb-7 mb-md-0">
+              <h2 class="display-3 mb-4 position-relative">
+                Have a project? Let's work togethor
+              </h2>
+              <p class="lead mb-5">
+                Write to me if you feel like a beer, want to place an order,
+                want to offer me a job or have a million to give away.
+              </p>
+              <div class="d-flex align-items-center">
+                <a
+                  class="fs-3 link-hover-underline"
+                  href="mailto:mail@doamin.com"
+                >
+                  mail@aaronnunez.com
+                  <svg
+                    class="ms-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.937531 2.06247L13.0312 1.98959L12.9583 14.0833L11.3183 14.1006L11.3746 4.7957L1.58515 14.5852L0.435662 13.4357L10.2251 3.64621L0.920252 3.70256L0.937531 2.06247Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="d-flex flex-column h-100 justify-content-between">
+                <div class="text-lg-end">
+                  <div class="mb-3">
+                    <a href="#!" class="link-hover-underline">Facebook</a>
+                  </div>
+                  <div class="mb-3">
+                    <a href="#!" class="link-hover-underline">Twitter</a>
+                  </div>
+                  <div class="mb-3">
+                    <a href="#!" class="link-hover-underline">Linkedin</a>
+                  </div>
+                  <div class="mb-3">
+                    <a href="#!" class="link-hover-underline">Behance</a>
+                  </div>
+                  <div class="mb-3">
+                    <a href="#!" class="link-hover-underline">Instagram</a>
+                  </div>
+                  <div class="mb-3">
+                    <a href="#!" class="link-hover-underline">Dribbble</a>
+                  </div>
+                </div>
+                <div>
+                  <p class="small text-muted text-md-end mb-0">
+                    © Copyright. A theme of Assan
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- / .container -->
+      </footer>
+    </div>
+    <!--Cursor-->
+    <div class="is-cursor">
+      <div class="v-cursor"></div>
+    </div>
+  </body>
+</template>
+
+<script>
+import Navbar from '../components/Navbar.vue';
+
+export default {
+  components: {
+    Navbar: Navbar,
+  },
+  data() {
+    return {};
+  },
+  mounted() {},
+  methods: {},
+};
+</script>
