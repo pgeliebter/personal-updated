@@ -156,7 +156,10 @@
                   data-scroll-direction="vertical"
                   data-scroll-speed="3"
                 >
-                  My Awards
+                  My Github Stats
+                  <small class="text-muted"
+                    >(from a custom backend scraper!)</small
+                  >
                 </h4>
               </div>
               <div class="col-md-7">
@@ -166,92 +169,52 @@
                   >
                     <div class="d-flex align-items-center fw-semibold fs-6">
                       <span class="d-block me-3">
-                        <svg
-                          class="text-muted"
-                          fill="currentColor"
-                          width="42"
-                          height="42"
-                          viewBox="0 0 512 512"
-                        >
-                          <path
-                            d="m183 392l-10 2 10 53c-13-4-25-10-37-17l2-49-10 0-1 44c-10-6-20-14-28-22l14-46-9-3-13 42c-8-7-15-15-21-25l21-43-8-5-18 40c-7-11-14-24-20-37l31-29-7-7-29 26c-3-9-6-19-9-29l35-25-5-7-31 22c-2-10-3-21-3-31l38-15-4-9-34 14c0-12 1-25 4-38l34-2 0-10-30 1c3-11 7-22 13-34l29 6 2-10-28-5c5-12 12-21 19-31l24 15 6-8-24-17c6-7 11-14 17-20l25 17 6-8-23-16c7-5 14-11 21-15l20 11 4-8-14-9c9-5 18-10 28-14l-4-10c-8 4-15 7-22 13l5-13-10-3-9 26c-6 3-10 7-14 11l5-18-10-3-10 34c-5 4-9 9-15 15l0-21-10 0 0 32c-7 9-12 17-17 27l-1-24-10 2 3 39c-4 10-9 20-11 29l-9-24-10 3 14 37c-2 11-4 24-5 35l-17-23-8 6 23 34c0 10 0 19 2 29l-23-17-5 9 31 24c1 10 4 19 8 29l-35-10-3 10 42 13c6 12 12 24 19 35l-38-7-2 10 48 8c6 9 13 17 20 24l-41 3 1 10 48-4c10 8 20 16 30 23l-38 16 2 8 45-17c13 7 24 13 38 17l-35 19 4 8 43-23 4 2z m326-76l-3-9-35 9c3-9 6-19 8-29l31-24-5-8-23 16c2-9 2-19 3-29l24-34-9-5-16 22c0-13-3-24-6-35l14-37-10-2-8 24c-3-10-7-20-12-30l3-39-10-2-1 24c-6-10-11-18-17-27l0-32-10 0 0 21c-4-5-9-10-14-15l-11-34-10 3 6 18c-4-4-10-7-14-11l-10-25-8 2 4 13c-7-4-16-8-24-13l-4 10c10 4 19 9 28 14l-16 9 6 8 20-11c7 4 14 10 21 15l-23 16 6 8 25-18c6 6 13 13 17 20l-24 17 6 8 24-15c7 9 14 19 19 30l-28 6 2 10 29-6c4 11 8 23 11 34l-29-1 0 9 34 3c2 13 4 25 4 38l-34-14-4 9 38 15c0 10-2 21-3 31l-32-23-6 9 35 25c-1 10-4 20-8 30l-30-27-7 7 32 29c-5 13-11 26-19 37l-18-39-9 4 21 43c-7 9-14 17-21 26l-13-42-9 2 14 47c-9 8-19 15-28 21l-2-44-10 0 2 49c-11 7-24 13-37 17l10-52-10-1-12 69 4-2 42 23 4-9-35-18c13-4 25-10 38-17l45 17 3-8-38-14c11-7 21-16 31-24l49 4 1-10-40-3c7-7 14-15 19-24l48-8-1-10-38 7c7-11 12-22 18-35z"
-                          />
-                        </svg>
+                        <i class="bi bi-github"></i>
+                      </span>
+                      Github commits today:
+                    </div>
+                    <p class="mb-0 h2">
+                      {{ this.githubCommitInfo.todays_commits }}
+                    </p>
+                  </li>
+                  <li
+                    class="d-flex align-items-center justify-content-between py-3 border-bottom"
+                  >
+                    <div class="d-flex align-items-center fw-semibold fs-6">
+                      <span class="d-block me-3">
+                        <i class="bi bi-github"></i>
                       </span>
                       Github commits this week:
                     </div>
-                    <p class="mb-0 h2">5</p>
+                    <p class="mb-0 h2">
+                      {{ this.githubCommitInfo.this_week_commits }}
+                    </p>
                   </li>
                   <li
                     class="d-flex align-items-center justify-content-between py-3 border-bottom"
                   >
                     <div class="d-flex align-items-center fw-semibold fs-6">
                       <span class="d-block me-3">
-                        <svg
-                          class="text-muted"
-                          fill="currentColor"
-                          width="42"
-                          height="42"
-                          viewBox="0 0 512 512"
-                        >
-                          <path
-                            d="m183 392l-10 2 10 53c-13-4-25-10-37-17l2-49-10 0-1 44c-10-6-20-14-28-22l14-46-9-3-13 42c-8-7-15-15-21-25l21-43-8-5-18 40c-7-11-14-24-20-37l31-29-7-7-29 26c-3-9-6-19-9-29l35-25-5-7-31 22c-2-10-3-21-3-31l38-15-4-9-34 14c0-12 1-25 4-38l34-2 0-10-30 1c3-11 7-22 13-34l29 6 2-10-28-5c5-12 12-21 19-31l24 15 6-8-24-17c6-7 11-14 17-20l25 17 6-8-23-16c7-5 14-11 21-15l20 11 4-8-14-9c9-5 18-10 28-14l-4-10c-8 4-15 7-22 13l5-13-10-3-9 26c-6 3-10 7-14 11l5-18-10-3-10 34c-5 4-9 9-15 15l0-21-10 0 0 32c-7 9-12 17-17 27l-1-24-10 2 3 39c-4 10-9 20-11 29l-9-24-10 3 14 37c-2 11-4 24-5 35l-17-23-8 6 23 34c0 10 0 19 2 29l-23-17-5 9 31 24c1 10 4 19 8 29l-35-10-3 10 42 13c6 12 12 24 19 35l-38-7-2 10 48 8c6 9 13 17 20 24l-41 3 1 10 48-4c10 8 20 16 30 23l-38 16 2 8 45-17c13 7 24 13 38 17l-35 19 4 8 43-23 4 2z m326-76l-3-9-35 9c3-9 6-19 8-29l31-24-5-8-23 16c2-9 2-19 3-29l24-34-9-5-16 22c0-13-3-24-6-35l14-37-10-2-8 24c-3-10-7-20-12-30l3-39-10-2-1 24c-6-10-11-18-17-27l0-32-10 0 0 21c-4-5-9-10-14-15l-11-34-10 3 6 18c-4-4-10-7-14-11l-10-25-8 2 4 13c-7-4-16-8-24-13l-4 10c10 4 19 9 28 14l-16 9 6 8 20-11c7 4 14 10 21 15l-23 16 6 8 25-18c6 6 13 13 17 20l-24 17 6 8 24-15c7 9 14 19 19 30l-28 6 2 10 29-6c4 11 8 23 11 34l-29-1 0 9 34 3c2 13 4 25 4 38l-34-14-4 9 38 15c0 10-2 21-3 31l-32-23-6 9 35 25c-1 10-4 20-8 30l-30-27-7 7 32 29c-5 13-11 26-19 37l-18-39-9 4 21 43c-7 9-14 17-21 26l-13-42-9 2 14 47c-9 8-19 15-28 21l-2-44-10 0 2 49c-11 7-24 13-37 17l10-52-10-1-12 69 4-2 42 23 4-9-35-18c13-4 25-10 38-17l45 17 3-8-38-14c11-7 21-16 31-24l49 4 1-10-40-3c7-7 14-15 19-24l48-8-1-10-38 7c7-11 12-22 18-35z"
-                          />
-                        </svg>
+                        <i class="bi bi-github"></i>
                       </span>
-                      Total dive count:
+                      Github commits last week:
                     </div>
-                    <p class="mb-0 h2">7</p>
+                    <p class="mb-0 h2">
+                      {{ this.githubCommitInfo.last_week_commits }}
+                    </p>
                   </li>
                   <li
                     class="d-flex align-items-center justify-content-between py-3 border-bottom"
                   >
                     <div class="d-flex align-items-center fw-semibold fs-6">
                       <span class="d-block me-3">
-                        <svg
-                          class="text-muted"
-                          fill="currentColor"
-                          width="42"
-                          height="42"
-                          viewBox="0 0 512 512"
-                        >
-                          <path
-                            d="m183 392l-10 2 10 53c-13-4-25-10-37-17l2-49-10 0-1 44c-10-6-20-14-28-22l14-46-9-3-13 42c-8-7-15-15-21-25l21-43-8-5-18 40c-7-11-14-24-20-37l31-29-7-7-29 26c-3-9-6-19-9-29l35-25-5-7-31 22c-2-10-3-21-3-31l38-15-4-9-34 14c0-12 1-25 4-38l34-2 0-10-30 1c3-11 7-22 13-34l29 6 2-10-28-5c5-12 12-21 19-31l24 15 6-8-24-17c6-7 11-14 17-20l25 17 6-8-23-16c7-5 14-11 21-15l20 11 4-8-14-9c9-5 18-10 28-14l-4-10c-8 4-15 7-22 13l5-13-10-3-9 26c-6 3-10 7-14 11l5-18-10-3-10 34c-5 4-9 9-15 15l0-21-10 0 0 32c-7 9-12 17-17 27l-1-24-10 2 3 39c-4 10-9 20-11 29l-9-24-10 3 14 37c-2 11-4 24-5 35l-17-23-8 6 23 34c0 10 0 19 2 29l-23-17-5 9 31 24c1 10 4 19 8 29l-35-10-3 10 42 13c6 12 12 24 19 35l-38-7-2 10 48 8c6 9 13 17 20 24l-41 3 1 10 48-4c10 8 20 16 30 23l-38 16 2 8 45-17c13 7 24 13 38 17l-35 19 4 8 43-23 4 2z m326-76l-3-9-35 9c3-9 6-19 8-29l31-24-5-8-23 16c2-9 2-19 3-29l24-34-9-5-16 22c0-13-3-24-6-35l14-37-10-2-8 24c-3-10-7-20-12-30l3-39-10-2-1 24c-6-10-11-18-17-27l0-32-10 0 0 21c-4-5-9-10-14-15l-11-34-10 3 6 18c-4-4-10-7-14-11l-10-25-8 2 4 13c-7-4-16-8-24-13l-4 10c10 4 19 9 28 14l-16 9 6 8 20-11c7 4 14 10 21 15l-23 16 6 8 25-18c6 6 13 13 17 20l-24 17 6 8 24-15c7 9 14 19 19 30l-28 6 2 10 29-6c4 11 8 23 11 34l-29-1 0 9 34 3c2 13 4 25 4 38l-34-14-4 9 38 15c0 10-2 21-3 31l-32-23-6 9 35 25c-1 10-4 20-8 30l-30-27-7 7 32 29c-5 13-11 26-19 37l-18-39-9 4 21 43c-7 9-14 17-21 26l-13-42-9 2 14 47c-9 8-19 15-28 21l-2-44-10 0 2 49c-11 7-24 13-37 17l10-52-10-1-12 69 4-2 42 23 4-9-35-18c13-4 25-10 38-17l45 17 3-8-38-14c11-7 21-16 31-24l49 4 1-10-40-3c7-7 14-15 19-24l48-8-1-10-38 7c7-11 12-22 18-35z"
-                          />
-                        </svg>
+                        <i class="bi bi-github"></i>
                       </span>
-                      FWA, Site of The Day
+                      Github commits this year:
                     </div>
-                    <p class="mb-0 h2">1</p>
-                  </li>
-                  <li
-                    class="d-flex align-items-center justify-content-between py-3 border-bottom"
-                  >
-                    <div class="d-flex align-items-center fw-semibold fs-6">
-                      <span class="d-block me-3">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          fill="currentColor"
-                          class="bi bi-journal-medical text-muted"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M8 4a.5.5 0 0 1 .5.5v.634l.549-.317a.5.5 0 1 1 .5.866L9 6l.549.317a.5.5 0 1 1-.5.866L8.5 6.866V7.5a.5.5 0 0 1-1 0v-.634l-.549.317a.5.5 0 1 1-.5-.866L7 6l-.549-.317a.5.5 0 0 1 .5-.866l.549.317V4.5A.5.5 0 0 1 8 4zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
-                          />
-                          <path
-                            d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
-                          />
-                          <path
-                            d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
-                          />
-                        </svg>
-                      </span>
-                      Published in 365 best websites in the world
-                    </div>
-                    <p class="mb-0 h2">2</p>
+                    <p class="mb-0 h2">
+                      {{ this.githubCommitInfo.this_year_commits }}
+                    </p>
                   </li>
                 </ul>
               </div>
@@ -312,27 +275,7 @@
                 want to offer me a job or have a million to give away.
               </p>
               <div class="d-flex align-items-center">
-                <a
-                  class="fs-3 link-hover-underline"
-                  href="mailto:mail@doamin.com"
-                >
-                  mail@aaronnunez.com
-                  <svg
-                    class="ms-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.937531 2.06247L13.0312 1.98959L12.9583 14.0833L11.3183 14.1006L11.3746 4.7957L1.58515 14.5852L0.435662 13.4357L10.2251 3.64621L0.920252 3.70256L0.937531 2.06247Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </a>
+                pgeliebter [at] gmail [dot] com
               </div>
             </div>
             <div class="col-md-5">
@@ -359,7 +302,7 @@
                 </div>
                 <div>
                   <p class="small text-muted text-md-end mb-0">
-                    © Copyright. A theme of Assan
+                    © Copyright. Pinny Geliebter
                   </p>
                 </div>
               </div>
@@ -379,6 +322,8 @@
 <script>
 import LocomotiveScroll from 'locomotive-scroll';
 import Navbar from '../components/Navbar.vue';
+// import cheerio from 'cheerio';
+import axios from 'axios';
 
 export default {
   components: {
@@ -388,6 +333,7 @@ export default {
     return {
       scrollIns: null,
       projects: this.$store.state.projects,
+      githubCommitInfo: {},
     };
   },
   mounted() {
@@ -395,6 +341,16 @@ export default {
     this.$nextTick(function () {
       _self.initLocoScroll();
     });
+
+    axios
+      .get('http://localhost:3000/profiles')
+      .then((res) => {
+        console.log(res.data);
+        this.githubCommitInfo = res.data;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   },
   methods: {
     initLocoScroll() {
